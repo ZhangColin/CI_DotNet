@@ -1,8 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <ItemGroup>
+        <BuildArtifactsDir Include="BuildArtifacts\" />
+    </ItemGroup>
+    <Target Name="Init" DependsOnTargets="Clean">
+        <MakeDir Directories="@(BuildArtifactsDir)"/>
+    </Target>
     <Target Name="Clean">
-        <RemoveDir Directories="BuildArtifacts"/>
-    </Target>
-    <Target Name="Init">
-        <MakeDir Directories="BuildArtifacts"/>
-    </Target>
+        <RemoveDir Directories="@(BuildArtifactsDir)"/>
+    </Target>    
 </Project>
