@@ -1,0 +1,8 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="Clean">
+        <RemoveDir Directories="BuildArtifacts"/>
+    </Target>
+    <Target Name="Init">
+        <MakeDir Directories="BuildArtifacts"/>
+    </Target>
+</Project>
