@@ -21,5 +21,10 @@ namespace CISample.Web.Controllers {
 
             return View();
         }
+
+        public ActionResult CiRunWithPushed()
+        {
+            return View();
+        }
     }
 }
