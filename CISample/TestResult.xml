@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="2" result="Passed" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2016-11-08 07:39:24Z" end-time="2016-11-08 07:39:25Z" duration="0.712175">
+  <command-line><![CDATA["C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe"  BuildArtifacts\CISample.Web.UnitTests.dll --output:BuildArtifacts\TestResults.xml]]></command-line>
+  <test-suite type="Assembly" id="0-1003" name="CISample.Web.UnitTests.dll" fullname="d:\ColinCode\CI_DotNet\CISample\BuildArtifacts\CISample.Web.UnitTests.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-11-08 07:39:24Z" end-time="2016-11-08 07:39:25Z" duration="0.660613" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3">
+    <environment framework-version="3.5.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="d:\ColinCode\CI_DotNet\CISample" machine-name="COLIN-COMPANY" user="Administrator" user-domain="COLIN-COMPANY" culture="zh-CN" uiculture="zh-CN" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="d:\ColinCode\CI_DotNet\CISample" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="25508" />
+      <property name="_APPDOMAIN" value="test-domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1004" name="CISample" fullname="CISample" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-11-08 07:39:24Z" end-time="2016-11-08 07:39:25Z" duration="0.630569" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3">
+      <test-suite type="TestSuite" id="0-1005" name="Web" fullname="CISample.Web" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-11-08 07:39:24Z" end-time="2016-11-08 07:39:25Z" duration="0.626462" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3">
+        <test-suite type="TestSuite" id="0-1006" name="UnitTests" fullname="CISample.Web.UnitTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-11-08 07:39:24Z" end-time="2016-11-08 07:39:25Z" duration="0.622466" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3">
+          <test-suite type="TestSuite" id="0-1007" name="ControllerTests" fullname="CISample.Web.UnitTests.ControllerTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-11-08 07:39:24Z" end-time="2016-11-08 07:39:25Z" duration="0.618471" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3">
+            <test-suite type="TestFixture" id="0-1000" name="HomeControllerTests" fullname="CISample.Web.UnitTests.ControllerTests.HomeControllerTests" classname="CISample.Web.UnitTests.ControllerTests.HomeControllerTests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2016-11-08 07:39:24Z" end-time="2016-11-08 07:39:25Z" duration="0.612070" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="3">
+              <test-case id="0-1002" name="AboutActionReturnsView" fullname="CISample.Web.UnitTests.ControllerTests.HomeControllerTests.AboutActionReturnsView" methodname="AboutActionReturnsView" classname="CISample.Web.UnitTests.ControllerTests.HomeControllerTests" runstate="Runnable" seed="1903344734" result="Passed" start-time="2016-11-08 07:39:24Z" end-time="2016-11-08 07:39:25Z" duration="0.594909" asserts="2" />
+              <test-case id="0-1001" name="IndexActionReturnsView" fullname="CISample.Web.UnitTests.ControllerTests.HomeControllerTests.IndexActionReturnsView" methodname="IndexActionReturnsView" classname="CISample.Web.UnitTests.ControllerTests.HomeControllerTests" runstate="Runnable" seed="135692490" result="Passed" start-time="2016-11-08 07:39:25Z" end-time="2016-11-08 07:39:25Z" duration="0.000300" asserts="1" />
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

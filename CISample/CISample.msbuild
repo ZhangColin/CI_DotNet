@@ -1,13 +1,20 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="RunUnitTests">
     <ItemGroup>
         <BuildArtifactsDir Include="BuildArtifacts\" />
         <SolutionFile Include="CISample.sln" />
+        <NUnitConsole Include="C:\Program Files (x86)\NUnit.org\nunit-console\nunit3-console.exe" />
+        <UnitTestsDLL Include="BuildArtifacts\CISample.Web.UnitTests.dll" />
+        <TestResultsPath Include="BuildArtifacts\TestResults.xml"/>
     </ItemGroup>
 
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
         <BuildPlatform Condition=" '$(BuildPlatform)' == '' ">Any CPU</BuildPlatform>
     </PropertyGroup>
+
+    <Target Name="RunUnitTests" DependsOnTargets="Compile">
+        <Exec Command='"@(NUnitConsole)" @(UnitTestsDLL) --result:@(TestResultsPath)'/>
+    </Target>
 
     <Target Name="Compile" DependsOnTargets="Init">
         <MSBuild Projects="@(SolutionFile)" Targets="Rebuild"
